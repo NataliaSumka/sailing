@@ -52,14 +52,20 @@ body {
 background-size: cover;
 background-repeat: no-repeat;
 background-position: 50% 60%;
+position: relative;
 }
 #logo {
   display: block;
 margin-left: auto;
 margin-right: auto;
-padding-top: 5%;
+margin-top: 5%;
+position: absolute;
+left: 40%;
+transition: transform 2s;
 }
-
+#logo:hover {
+	transform: rotate(360deg);
+}
 
 .clear{
   clear: both;
@@ -165,6 +171,7 @@ padding: 0 5px;
   color: rgba(255,255,255,0.6);
 padding: 10px;
 padding-left: 10%;
+text-align: center;
 }
 
 /*media do górnej nawigacji*/
@@ -173,6 +180,11 @@ padding-left: 10%;
   .topnav a.icon {
     float: right;
     display: block;
+  }
+
+
+  #logo {
+   left: 20%;
   }
   #welcome {
     height: 60vh;
